@@ -1,5 +1,3 @@
-# 1251번
-
 word = input()
 answer = []
 
