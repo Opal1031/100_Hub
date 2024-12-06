@@ -8,7 +8,7 @@ for a in range(N):
 for b in range(M):
     i, j = map(int, input().split())
     
-    bucket[i - 1], bucket[j - 1] = bucket[j - 1], bucket[i -1]
+    bucket[i - 1], bucket[j - 1] = bucket[j - 1], bucket[i - 1]
 
 for d in range(N):
     print(bucket[d], end = " ")
