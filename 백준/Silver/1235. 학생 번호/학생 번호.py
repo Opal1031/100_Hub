@@ -6,9 +6,9 @@ length = len(mat[0])
 for i in range(1, length + 1):
     check = set()
 
-    for num in mat:
-        suffix = num[-i:]
-        check.add(suffix)
+    for j in mat:
+        sub_num = j[-i:]
+        check.add(sub_num)
 
     if len(check) == N:
         print(i)
