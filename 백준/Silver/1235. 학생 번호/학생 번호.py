@@ -1,19 +1,15 @@
 N = int(input())
-nums = []
+mat = [input().strip() for _ in range(N)]
 
-for _ in range(N):
-    nums.append(str(input()))
+length = len(mat[0])
 
-for i in range(1, len(nums[0]) + 1):
-    results = []
+for i in range(1, length + 1):
+    check = set()
 
-    for j in range(N):
-        if nums[j][-i:] in results:
-            break
+    for num in mat:
+        suffix = num[-i:]
+        check.add(suffix)
 
-        else:
-            results.append(nums[j][-i:])
-
-    if len(results) == N:
+    if len(check) == N:
         print(i)
         break
