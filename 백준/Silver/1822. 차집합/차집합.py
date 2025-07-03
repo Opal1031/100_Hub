@@ -5,4 +5,6 @@ B = list(map(int, input().split()))
 check = set(A) - set(B)
 
 print(len(check))
-print(*sorted(check))
+
+if len(check) != 0:
+    print(*sorted(check))
