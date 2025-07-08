@@ -1,6 +1,6 @@
 import sys
 
-S = sys.stdin.read().strip()
+S = sys.stdin.readline().strip()
 
 for idx in range(len(S)):
     if S[idx:] == S[idx:][::-1]:
