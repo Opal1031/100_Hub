@@ -10,15 +10,13 @@ for i in range(1, N + 1):
 
 for j in range(1, N + 1):
     ans = []
-    flag = True
-
     ans.append(j)
 
-    while flag:
+    while True:
         ans.append(next_ask[ans[-1]])
 
         if ans.count(ans[-1]) == 2:
-            flag = False
+            break
 
     if len(ans) > len_count:
         len_count = len(ans)
