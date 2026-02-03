@@ -1,4 +1,2 @@
-num_list = list(map(int, input().split()))
-num_list.sort()
-
-print(num_list[1])
+L = list(map(int, input().split()))
+print(sorted(L)[1])
