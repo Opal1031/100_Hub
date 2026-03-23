@@ -1,10 +1,10 @@
-a,b = input().split()
+import sys
+input = sys.stdin.readline
 
-a = int(a)
-b = int(b)
+A, B = map(int, input().split())
 
-print(a+b)
-print(a-b)
-print(a*b)
-print(int(a/b))
-print(a%b)
+print(A + B)
+print(A - B)
+print(A * B)
+print(A // B)
+print(A % B)
