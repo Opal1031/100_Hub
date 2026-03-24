@@ -1,14 +1,16 @@
-collection = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+import sys
+input = sys.stdin.readline
 
 while True:
-    count = 0
-    sentence = input()
+    S = input().rstrip()
     
-    if sentence == "#":
+    if S == "#":
         break
-        
-    for i in sentence:
-        if i in collection:
+    
+    count = 0
+    
+    for c in S:
+        if c in "aeiouAEIOU":
             count += 1
             
     print(count)
