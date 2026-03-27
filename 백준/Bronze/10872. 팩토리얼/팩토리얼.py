@@ -1,6 +1,7 @@
 import sys
+input = sys.stdin.readline
 
-N = int(sys.stdin.readline())
+N = int(input())
 Num = 1
 
 if (N == 0):
