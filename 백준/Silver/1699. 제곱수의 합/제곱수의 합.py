@@ -1,6 +1,7 @@
 import sys
+input = sys.stdin.readline
 
-Num = int(sys.stdin.readline())
+Num = int(input())
 dp = list(range(Num + 1))
 
 for i in range(2, Num + 1):
