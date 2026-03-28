@@ -1,8 +1,8 @@
-import sys
-
 while True:
     try:
-        print(input())
+        line = input()
+        
+        print(line)
 
-    except:
+    except EOFError:
         break
