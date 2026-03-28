@@ -1,7 +1,7 @@
 import sys
+input = sys.stdin.readline
 
-star = "*"
-num = int(sys.stdin.readline())
+N = int(input())
 
-for i in range(num):
-    print(star * (i + 1))
+for i in range(1, N + 1):
+    print("*" * i)
