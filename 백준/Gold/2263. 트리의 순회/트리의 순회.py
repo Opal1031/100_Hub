@@ -31,7 +31,7 @@ while stack:
     left_size = root_index - in_left
 
     # 스택은 LIFO -> 오른쪽을 먼저 넣고 왼쪽을 나중에 append
-    # 실제 처리 순서는 root -> left -> rights
+    # 실제 처리 순서는 root -> left -> right
     if (root_index + 1 <= in_right):
         stack.append(
             (
